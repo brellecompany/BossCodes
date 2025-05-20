@@ -1,0 +1,185 @@
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Gerenciamento
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: "Montserrat", sans-serif;
+      background-color: #f3f0f4;
+    }
+
+    .font-anton {
+      font-family: "Anton", sans-serif;
+    }
+  </style>
+ </head>
+ <body class="min-h-screen flex flex-col">
+  <header class="flex items-center justify-between bg-pink-300 px-4 sm:px-6 md:px-10 h-14 sm:h-16">
+   <div class="flex items-center gap-3">
+    <img alt="Logo Aura's Beauty Studio de Beleza in black text on white background" class="h-10 w-auto" height="40" src="aura'sbeauty.png" width="80"/>
+    <button aria-label="Menu" class="text-black text-2xl sm:text-3xl focus:outline-none">
+     <i class="fas fa-bars">
+     </i>
+    </button>
+   </div>
+   <h1 class="font-anton text-black text-lg sm:text-xl md:text-2xl select-none" style="letter-spacing: 0.03em">
+    GERENCIAMENTO
+   </h1>
+   <button aria-label="Logout" class="text-black text-xl sm:text-2xl focus:outline-none">
+    <i class="fas fa-sign-out-alt">
+    </i>
+   </button>
+  </header>
+  <main class="flex-grow px-4 sm:px-6 md:px-10 py-6 bg-[#fef0f4]">
+   <form class="max-w-5xl mx-auto">
+    <div class="mb-6">
+     <label class="sr-only" for="search">
+      Buscar
+     </label>
+     <div class="relative">
+      <input class="w-full bg-pink-300 border border-pink-300 rounded px-3 py-2 pl-10 text-black placeholder-black focus:outline-none focus:ring-2 focus:ring-pink-400" id="search" placeholder="" type="search"/>
+      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-black text-lg">
+       <i class="fas fa-search">
+       </i>
+      </span>
+     </div>
+    </div>
+    <div class="mb-6 flex justify-end">
+     <button aria-label="Dropdown" class="text-black text-2xl focus:outline-none" type="button">
+      <i class="fas fa-caret-down">
+      </i>
+     </button>
+    </div>
+    <div class="overflow-x-auto max-w-5xl mx-auto">
+     <table class="w-full border-2 border-black border-collapse text-center text-sm sm:text-base">
+      <thead>
+       <tr class="bg-white font-bold font-anton">
+        <th class="border border-black px-3 py-2">
+         Códigos
+        </th>
+        <th class="border border-black px-3 py-2">
+         Procedimentos
+        </th>
+        <th class="border border-black px-3 py-2">
+         Profissionais
+        </th>
+        <th class="border border-black px-3 py-2">
+         Duração
+        </th>
+       </tr>
+      </thead>
+      <tbody class="font-normal font-montserrat">
+       <tr class="bg-white border border-black">
+        <td class="border border-black px-3 py-2">
+         172000
+        </td>
+        <td class="border border-black px-3 py-2">
+         Manicure
+        </td>
+        <td class="border border-black px-3 py-2">
+         Larissa
+        </td>
+        <td class="border border-black px-3 py-2">
+         40min
+        </td>
+       </tr>
+       <tr class="bg-white border border-black">
+        <td class="border border-black px-3 py-2">
+         196300
+        </td>
+        <td class="border border-black px-3 py-2">
+         Cabeleireira
+        </td>
+        <td class="border border-black px-3 py-2">
+         Rafaela
+        </td>
+        <td class="border border-black px-3 py-2">
+         40min à 1h
+        </td>
+       </tr>
+       <tr class="bg-white border border-black">
+        <td class="border border-black px-3 py-2">
+         148500
+        </td>
+        <td class="border border-black px-3 py-2">
+         Pedicure
+        </td>
+        <td class="border border-black px-3 py-2">
+         Luana
+        </td>
+        <td class="border border-black px-3 py-2">
+         40min
+        </td>
+       </tr>
+       <tr class="bg-white border border-black">
+        <td class="border border-black px-3 py-2">
+         169000
+        </td>
+        <td class="border border-black px-3 py-2">
+         Maquiadora
+        </td>
+        <td class="border border-black px-3 py-2">
+         Bruna
+        </td>
+        <td class="border border-black px-3 py-2">
+         1h30min
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div aria-label="Table row actions" class="max-w-5xl mx-auto mt-4 flex justify-center gap-4" role="group">
+     <button aria-label="Visualizar" class="w-10 h-10 rounded-full border border-pink-400 text-pink-400 flex items-center justify-center hover:bg-pink-100 focus:outline-none" type="button">
+      <i class="fas fa-eye">
+      </i>
+     </button>
+     <button aria-label="Editar" class="w-10 h-10 rounded-full border border-pink-400 text-pink-400 flex items-center justify-center hover:bg-pink-100 focus:outline-none" type="button">
+      <i class="fas fa-pencil-alt">
+      </i>
+     </button>
+     <button aria-label="Excluir" class="w-10 h-10 rounded-full border border-pink-400 text-pink-400 flex items-center justify-center hover:bg-pink-100 focus:outline-none" type="button">
+      <i class="fas fa-trash">
+      </i>
+     </button>
+    </div>
+    <nav aria-label="Pagination" class="max-w-5xl mx-auto mt-6 bg-white rounded px-4 py-2 flex justify-center items-center select-none">
+     <button aria-label="Previous page" class="text-pink-400 font-semibold text-sm sm:text-base px-2">
+      &lt;
+     </button>
+     <button aria-current="page" class="bg-pink-400 text-white font-semibold text-sm sm:text-base px-3 py-1 mx-1 rounded">
+      1
+     </button>
+     <button class="text-pink-400 font-semibold text-sm sm:text-base px-3 py-1 mx-1 rounded">
+      2
+     </button>
+     <button class="text-pink-400 font-semibold text-sm sm:text-base px-3 py-1 mx-1 rounded">
+      3
+     </button>
+     <button aria-label="Next page" class="text-pink-400 font-semibold text-sm sm:text-base px-2">
+      &gt;
+     </button>
+    </nav>
+   </form>
+  </main>
+
+  <!-- Botão Ir para Formulário -->
+  <a href="formulario.html" aria-label="Ir para o Formulário"
+     class="fixed bottom-6 right-24 bg-pink-300 text-black w-14 h-14 rounded-full flex items-center justify-center shadow-lg focus:outline-none">
+    <i class="fas fa-file-alt text-2xl"></i>
+  </a>
+
+  <!-- Botão do balão de chat -->
+  <button aria-label="Chat" class="fixed bottom-6 right-6 bg-pink-300 text-black w-14 h-14 rounded-full flex items-center justify-center shadow-lg focus:outline-none">
+    <i class="fas fa-comment-alt text-2xl">
+    </i>
+  </button>
+  <script src="script.js"></script>
+ </body>
+</html>
