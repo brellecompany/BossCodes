@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdeef2;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.header {
+  background-color: #f8bcd4;
+  padding: 20px;
+  text-align: center;
+}
+
+.titulo-agendamento {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  color: #333;
+}
+
+.container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filtros {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filtros label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#buscar {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+}
+
+.botoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 10px 16px;
+  font-weight: bold;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.agenda {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.agenda th,
+.agenda td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.agenda th {
+  background-color: #f8bcd4;
+  color: #333;
+}
+
+.agenda td:first-child {
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.disponivel {
+  background-color: #c0f0c0;
+  color: #333;
+  font-size: 0.85rem;
+}
+
+.disponivel .slot-btn {
+  display: inline-block;
+  background: #80c998;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.disponivel .slot-btn:hover {
+  background-color: #66b48d;
+}
+
+.indisponivel {
+  background-color: #e0e0e0;
+  color: #888;
+}
+
+.concluir {
+  padding: 10px 16px;
+  font-weight: bold;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.concluir:hover {
+  background-color: #555;
+}
+
+.slot-btn.selecionado {
+  background-color: #256343;
+}

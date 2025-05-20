@@ -1,0 +1,120 @@
+header {
+    background-color: #FFC9E9;
+    text-align: center;
+    padding: 1em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#calender {
+    font-size: 35px;
+    font-family: 'Georgia', serif;
+}
+
+body.dark-mode {
+    background-color:#8a175e ;
+    color: #ffffff;
+}
+
+body.dark-mode td {
+    background-color: #A80359;
+    color: #ffffff;
+}
+table {
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+    
+}
+
+th {
+    font-size: large;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 20px;
+}
+th {
+    background-color: rgb(255, 139, 207);
+}
+body.dark-mode th {
+    background-color: #c51f62;   
+}
+
+body {
+    background-color:#feeaff;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 40px;
+}
+#theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white ;
+    border-radius: 360px;
+}
+
+body.dark-mode header {
+    background-color: #68255d;
+    color: white; 
+}
+
+tr {
+    background-color: #FFC9E9;
+}
+
+button.ui.icon.button.menu-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button.ui.icon.button.menu-button i {
+    font-size: 16px;
+    color: #333;
+}
+
+button.ui.icon.button.theme-toggle-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;  
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 360px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button.ui.icon.button.theme-toggle-button i {
+    font-size: 16px;
+    color: #333;
+}
